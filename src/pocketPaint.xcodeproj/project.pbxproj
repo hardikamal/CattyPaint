@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		92302FA419E2B576005FD465 /* LicenseTest */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 92302FA519E2B576005FD465 /* Build configuration list for PBXAggregateTarget "LicenseTest" */;
+			buildPhases = (
+				92302FAE19E2B625005FD465 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = LicenseTest;
+			productName = LicenseTest;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		9224C1F019975C570071AFEC /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9224C1EF19975C570071AFEC /* UIImage+Rotate.m */; };
+		92302F8219E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8119E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m */; };
+		92302F8519E2B2A3005FD465 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8419E2B2A3005FD465 /* UIViewController+KNSemiModal.m */; };
+		92302F8A19E2B2B8005FD465 /* LinkedListStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8719E2B2B8005FD465 /* LinkedListStack.m */; };
+		92302F8B19E2B2B8005FD465 /* UIImage+FloodFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8919E2B2B8005FD465 /* UIImage+FloodFill.m */; };
+		92302F8E19E2B2C6005FD465 /* LCTableViewPickerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8D19E2B2C6005FD465 /* LCTableViewPickerControl.m */; };
+		92302F9E19E2B3B5005FD465 /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 92302F9B19E2B3B5005FD465 /* nko_brightness_guide.png */; };
+		92302F9F19E2B3B5005FD465 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92302F9C19E2B3B5005FD465 /* nko_brightness_guide@2x.png */; };
+		92302FA019E2B3B5005FD465 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 92302F9D19E2B3B5005FD465 /* nko_colormap.png */; };
+		92302FA319E2B3D0005FD465 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302FA219E2B3D0005FD465 /* NKOColorPickerView.m */; };
+		92302FAA19E2B597005FD465 /* license-test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 92302FA919E2B597005FD465 /* license-test.sh */; };
+		92302FC019E2C97B005FD465 /* FillTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302FBF19E2C97B005FD465 /* FillTool.m */; };
+		92302FC919E2C9A6005FD465 /* ImageHelper.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC219E2C9A6005FD465 /* ImageHelper.license */; };
+		92302FCA19E2C9A6005FD465 /* LCTableViewPickerControl.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC319E2C9A6005FD465 /* LCTableViewPickerControl.license */; };
+		92302FCB19E2C9A6005FD465 /* NKOColorPickerView.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC419E2C9A6005FD465 /* NKOColorPickerView.license */; };
+		92302FCC19E2C9A6005FD465 /* SPUserResizableView.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC519E2C9A6005FD465 /* SPUserResizableView.license */; };
+		92302FCD19E2C9A6005FD465 /* UIImage+FloodFill.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC619E2C9A6005FD465 /* UIImage+FloodFill.license */; };
+		92302FCE19E2C9A6005FD465 /* UIViewController+KNSemiModal in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC719E2C9A6005FD465 /* UIViewController+KNSemiModal */; };
+		92302FCF19E2C9A6005FD465 /* YKImageCropperView.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC819E2C9A6005FD465 /* YKImageCropperView.license */; };
+		924A8C5E19DFED0400751BAE /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 924A8C5D19DFED0400751BAE /* SPUserResizableView.m */; };
+		9267E95219C0A61000FAA3F5 /* DrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E95119C0A61000FAA3F5 /* DrawTool.m */; };
+		9267E95B19C0B09300FAA3F5 /* LineTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E95A19C0B09300FAA3F5 /* LineTool.m */; };
+		9267E95E19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E95D19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m */; };
+		9267E96719C0BA0B00FAA3F5 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E96619C0BA0B00FAA3F5 /* ImagePicker.m */; };
+		9267E96A19C0BBE000FAA3F5 /* ResizeViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E96919C0BBE000FAA3F5 /* ResizeViewManager.m */; };
+		9267E96D19C1976600FAA3F5 /* PointerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267E96C19C1976600FAA3F5 /* PointerTool.m */; };
+		929D2EBB19920E3A004405B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2EBA19920E3A004405B5 /* Foundation.framework */; };
+		929D2EBD19920E3A004405B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2EBC19920E3A004405B5 /* CoreGraphics.framework */; };
+		929D2EBF19920E3A004405B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2EBE19920E3A004405B5 /* UIKit.framework */; };
+		929D2EC519920E3A004405B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929D2EC319920E3A004405B5 /* InfoPlist.strings */; };
+		929D2EC719920E3A004405B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EC619920E3A004405B5 /* main.m */; };
+		929D2ECB19920E3A004405B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2ECA19920E3A004405B5 /* AppDelegate.m */; };
+		929D2ECE19920E3A004405B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929D2ECC19920E3A004405B5 /* Main.storyboard */; };
+		929D2ED119920E3A004405B5 /* PaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2ED019920E3A004405B5 /* PaintViewController.m */; };
+		929D2ED319920E3A004405B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929D2ED219920E3A004405B5 /* Images.xcassets */; };
+		929D2EDA19920E3A004405B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2ED919920E3A004405B5 /* XCTest.framework */; };
+		929D2EDB19920E3A004405B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2EBA19920E3A004405B5 /* Foundation.framework */; };
+		929D2EDC19920E3A004405B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D2EBE19920E3A004405B5 /* UIKit.framework */; };
+		929D2EE419920E3A004405B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929D2EE219920E3A004405B5 /* InfoPlist.strings */; };
+		929D2EE619920E3B004405B5 /* pocketPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EE519920E3B004405B5 /* pocketPaintTests.m */; };
+		929D2EF5199261D9004405B5 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EF4199261D9004405B5 /* ColorPickerViewController.m */; };
+		929D2EF8199261F0004405B5 /* BrushPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EF7199261F0004405B5 /* BrushPickerViewController.m */; };
+		929D2F021992A680004405B5 /* YKImageCropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */; };
+		929D2F031992A680004405B5 /* YKImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2F011992A680004405B5 /* YKImageCropperView.m */; };
+		92A51D7D19C9E9140099B3DF /* HandTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A51D7C19C9E9140099B3DF /* HandTool.m */; };
+		92B2CFC019C0A08D00502BBE /* RGBAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CFBF19C0A08D00502BBE /* RGBAHelper.m */; };
+		92B2CFC319C0A15900502BBE /* PipetteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CFC219C0A15900502BBE /* PipetteTool.m */; };
+		92BAC2B219C4614300BCCE43 /* UndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BAC2B119C4614300BCCE43 /* UndoManager.m */; };
+		92ED8BC9199B63C4002C9294 /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED8BC8199B63C4002C9294 /* ImageHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92302FD019E2CD0C005FD465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929D2EAF19920E3A004405B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92302FA419E2B576005FD465;
+			remoteInfo = LicenseTest;
+		};
+		929D2EDD19920E3A004405B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929D2EAF19920E3A004405B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929D2EB619920E3A004405B5;
+			remoteInfo = pocketPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9224C1EE19975C570071AFEC /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		9224C1EF19975C570071AFEC /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		92302F8019E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CatrobatUIColorExtensions.h"; sourceTree = "<group>"; };
+		92302F8119E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CatrobatUIColorExtensions.m"; sourceTree = "<group>"; };
+		92302F8319E2B2A3005FD465 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "pocketPaint/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		92302F8419E2B2A3005FD465 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KNSemiModal.m"; path = "pocketPaint/UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		92302F8619E2B2B8005FD465 /* LinkedListStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedListStack.h; path = pocketPaint/LinkedListStack.h; sourceTree = "<group>"; };
+		92302F8719E2B2B8005FD465 /* LinkedListStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedListStack.m; path = pocketPaint/LinkedListStack.m; sourceTree = "<group>"; };
+		92302F8819E2B2B8005FD465 /* UIImage+FloodFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FloodFill.h"; path = "pocketPaint/UIImage+FloodFill.h"; sourceTree = "<group>"; };
+		92302F8919E2B2B8005FD465 /* UIImage+FloodFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FloodFill.m"; path = "pocketPaint/UIImage+FloodFill.m"; sourceTree = "<group>"; };
+		92302F8C19E2B2C6005FD465 /* LCTableViewPickerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewPickerControl.h; sourceTree = "<group>"; };
+		92302F8D19E2B2C6005FD465 /* LCTableViewPickerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewPickerControl.m; sourceTree = "<group>"; };
+		92302F9B19E2B3B5005FD465 /* nko_brightness_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nko_brightness_guide.png; path = pocketPaint/nko_brightness_guide.png; sourceTree = SOURCE_ROOT; };
+		92302F9C19E2B3B5005FD465 /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nko_brightness_guide@2x.png"; path = "pocketPaint/nko_brightness_guide@2x.png"; sourceTree = SOURCE_ROOT; };
+		92302F9D19E2B3B5005FD465 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nko_colormap.png; path = pocketPaint/nko_colormap.png; sourceTree = SOURCE_ROOT; };
+		92302FA119E2B3D0005FD465 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOColorPickerView.h; path = pocketPaint/NKOColorPickerView.h; sourceTree = SOURCE_ROOT; };
+		92302FA219E2B3D0005FD465 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOColorPickerView.m; path = pocketPaint/NKOColorPickerView.m; sourceTree = SOURCE_ROOT; };
+		92302FA919E2B597005FD465 /* license-test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "license-test.sh"; path = "../license-test.sh"; sourceTree = "<group>"; };
+		92302FBE19E2C97B005FD465 /* FillTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillTool.h; sourceTree = "<group>"; };
+		92302FBF19E2C97B005FD465 /* FillTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillTool.m; sourceTree = "<group>"; };
+		92302FC219E2C9A6005FD465 /* ImageHelper.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageHelper.license; sourceTree = "<group>"; };
+		92302FC319E2C9A6005FD465 /* LCTableViewPickerControl.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LCTableViewPickerControl.license; sourceTree = "<group>"; };
+		92302FC419E2C9A6005FD465 /* NKOColorPickerView.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NKOColorPickerView.license; sourceTree = "<group>"; };
+		92302FC519E2C9A6005FD465 /* SPUserResizableView.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SPUserResizableView.license; sourceTree = "<group>"; };
+		92302FC619E2C9A6005FD465 /* UIImage+FloodFill.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage+FloodFill.license"; sourceTree = "<group>"; };
+		92302FC719E2C9A6005FD465 /* UIViewController+KNSemiModal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIViewController+KNSemiModal"; sourceTree = "<group>"; };
+		92302FC819E2C9A6005FD465 /* YKImageCropperView.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YKImageCropperView.license; sourceTree = "<group>"; };
+		924A8C5C19DFED0400751BAE /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
+		924A8C5D19DFED0400751BAE /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
+		9267E95019C0A61000FAA3F5 /* DrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTool.h; sourceTree = "<group>"; };
+		9267E95119C0A61000FAA3F5 /* DrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTool.m; sourceTree = "<group>"; };
+		9267E95919C0B09300FAA3F5 /* LineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineTool.h; sourceTree = "<group>"; };
+		9267E95A19C0B09300FAA3F5 /* LineTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineTool.m; sourceTree = "<group>"; };
+		9267E95C19C0B40E00FAA3F5 /* MirrorRotationZoomTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorRotationZoomTool.h; sourceTree = "<group>"; };
+		9267E95D19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorRotationZoomTool.m; sourceTree = "<group>"; };
+		9267E96519C0BA0B00FAA3F5 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePicker.h; sourceTree = "<group>"; };
+		9267E96619C0BA0B00FAA3F5 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePicker.m; sourceTree = "<group>"; };
+		9267E96819C0BBE000FAA3F5 /* ResizeViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeViewManager.h; sourceTree = "<group>"; };
+		9267E96919C0BBE000FAA3F5 /* ResizeViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeViewManager.m; sourceTree = "<group>"; };
+		9267E96B19C1976600FAA3F5 /* PointerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerTool.h; sourceTree = "<group>"; };
+		9267E96C19C1976600FAA3F5 /* PointerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointerTool.m; sourceTree = "<group>"; };
+		929D2EB719920E3A004405B5 /* pocketPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		929D2EBA19920E3A004405B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		929D2EBC19920E3A004405B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		929D2EBE19920E3A004405B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		929D2EC219920E3A004405B5 /* pocketPaint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pocketPaint-Info.plist"; sourceTree = "<group>"; };
+		929D2EC419920E3A004405B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		929D2EC619920E3A004405B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		929D2EC819920E3A004405B5 /* pocketPaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pocketPaint-Prefix.pch"; sourceTree = "<group>"; };
+		929D2EC919920E3A004405B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		929D2ECA19920E3A004405B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		929D2ECD19920E3A004405B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		929D2ECF19920E3A004405B5 /* PaintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintViewController.h; sourceTree = "<group>"; };
+		929D2ED019920E3A004405B5 /* PaintViewController.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PaintViewController.m; sourceTree = "<group>"; tabWidth = 2; };
+		929D2ED219920E3A004405B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		929D2ED819920E3A004405B5 /* pocketPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pocketPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929D2ED919920E3A004405B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		929D2EE119920E3A004405B5 /* pocketPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pocketPaintTests-Info.plist"; sourceTree = "<group>"; };
+		929D2EE319920E3A004405B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		929D2EE519920E3B004405B5 /* pocketPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pocketPaintTests.m; sourceTree = "<group>"; };
+		929D2EF3199261D9004405B5 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		929D2EF4199261D9004405B5 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		929D2EF6199261F0004405B5 /* BrushPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrushPickerViewController.h; sourceTree = "<group>"; };
+		929D2EF7199261F0004405B5 /* BrushPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrushPickerViewController.m; sourceTree = "<group>"; };
+		929D2EFE1992A680004405B5 /* YKImageCropperOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKImageCropperOverlayView.h; path = ../YKImageCropperOverlayView.h; sourceTree = "<group>"; };
+		929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKImageCropperOverlayView.m; path = ../YKImageCropperOverlayView.m; sourceTree = "<group>"; };
+		929D2F001992A680004405B5 /* YKImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKImageCropperView.h; path = ../YKImageCropperView.h; sourceTree = "<group>"; };
+		929D2F011992A680004405B5 /* YKImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKImageCropperView.m; path = ../YKImageCropperView.m; sourceTree = "<group>"; };
+		92A51D7B19C9E9140099B3DF /* HandTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTool.h; sourceTree = "<group>"; };
+		92A51D7C19C9E9140099B3DF /* HandTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTool.m; sourceTree = "<group>"; };
+		92B2CFBE19C0A08D00502BBE /* RGBAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBAHelper.h; sourceTree = "<group>"; };
+		92B2CFBF19C0A08D00502BBE /* RGBAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGBAHelper.m; sourceTree = "<group>"; };
+		92B2CFC119C0A15900502BBE /* PipetteTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PipetteTool.h; sourceTree = "<group>"; };
+		92B2CFC219C0A15900502BBE /* PipetteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PipetteTool.m; sourceTree = "<group>"; };
+		92BAC2B019C4614300BCCE43 /* UndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoManager.h; sourceTree = "<group>"; };
+		92BAC2B119C4614300BCCE43 /* UndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoManager.m; sourceTree = "<group>"; };
+		92ED8BC7199B63C4002C9294 /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
+		92ED8BC8199B63C4002C9294 /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929D2EB419920E3A004405B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929D2EBD19920E3A004405B5 /* CoreGraphics.framework in Frameworks */,
+				929D2EBF19920E3A004405B5 /* UIKit.framework in Frameworks */,
+				929D2EBB19920E3A004405B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929D2ED519920E3A004405B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929D2EDA19920E3A004405B5 /* XCTest.framework in Frameworks */,
+				929D2EDC19920E3A004405B5 /* UIKit.framework in Frameworks */,
+				929D2EDB19920E3A004405B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9216DFEB19DDABE90013C1E2 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				92302FA119E2B3D0005FD465 /* NKOColorPickerView.h */,
+				92302FA219E2B3D0005FD465 /* NKOColorPickerView.m */,
+				92302F9B19E2B3B5005FD465 /* nko_brightness_guide.png */,
+				92302F9C19E2B3B5005FD465 /* nko_brightness_guide@2x.png */,
+				92302F9D19E2B3B5005FD465 /* nko_colormap.png */,
+			);
+			name = ColorPicker;
+			path = ../Assets;
+			sourceTree = "<group>";
+		};
+		922647D619B75174003A5F30 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				92BAC2B019C4614300BCCE43 /* UndoManager.h */,
+				92BAC2B119C4614300BCCE43 /* UndoManager.m */,
+				92B2CFBE19C0A08D00502BBE /* RGBAHelper.h */,
+				92B2CFBF19C0A08D00502BBE /* RGBAHelper.m */,
+				92ED8BC7199B63C4002C9294 /* ImageHelper.h */,
+				92ED8BC8199B63C4002C9294 /* ImageHelper.m */,
+				9224C1EE19975C570071AFEC /* UIImage+Rotate.h */,
+				9224C1EF19975C570071AFEC /* UIImage+Rotate.m */,
+				92302F8019E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.h */,
+				92302F8119E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m */,
+				924A8C5F19DFED1400751BAE /* ResizeView */,
+				9216DFEB19DDABE90013C1E2 /* ColorPicker */,
+				928756DE19DE8C3C00F520E8 /* ModalView */,
+				922647D719B7518D003A5F30 /* Fill */,
+				929D2EEF1992610C004405B5 /* Cropper */,
+				929D2F3F1994F3CC004405B5 /* picker */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		922647D719B7518D003A5F30 /* Fill */ = {
+			isa = PBXGroup;
+			children = (
+				92302F8619E2B2B8005FD465 /* LinkedListStack.h */,
+				92302F8719E2B2B8005FD465 /* LinkedListStack.m */,
+				92302F8819E2B2B8005FD465 /* UIImage+FloodFill.h */,
+				92302F8919E2B2B8005FD465 /* UIImage+FloodFill.m */,
+			);
+			name = Fill;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		922647D819B751AC003A5F30 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				929D2ECF19920E3A004405B5 /* PaintViewController.h */,
+				929D2ED019920E3A004405B5 /* PaintViewController.m */,
+				929D2EF3199261D9004405B5 /* ColorPickerViewController.h */,
+				929D2EF4199261D9004405B5 /* ColorPickerViewController.m */,
+				929D2EF6199261F0004405B5 /* BrushPickerViewController.h */,
+				929D2EF7199261F0004405B5 /* BrushPickerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		92302FC119E2C9A6005FD465 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				92302FC219E2C9A6005FD465 /* ImageHelper.license */,
+				92302FC319E2C9A6005FD465 /* LCTableViewPickerControl.license */,
+				92302FC419E2C9A6005FD465 /* NKOColorPickerView.license */,
+				92302FC519E2C9A6005FD465 /* SPUserResizableView.license */,
+				92302FC619E2C9A6005FD465 /* UIImage+FloodFill.license */,
+				92302FC719E2C9A6005FD465 /* UIViewController+KNSemiModal */,
+				92302FC819E2C9A6005FD465 /* YKImageCropperView.license */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		924A8C5F19DFED1400751BAE /* ResizeView */ = {
+			isa = PBXGroup;
+			children = (
+				924A8C5C19DFED0400751BAE /* SPUserResizableView.h */,
+				924A8C5D19DFED0400751BAE /* SPUserResizableView.m */,
+			);
+			name = ResizeView;
+			sourceTree = "<group>";
+		};
+		928756DE19DE8C3C00F520E8 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				92302F8319E2B2A3005FD465 /* UIViewController+KNSemiModal.h */,
+				92302F8419E2B2A3005FD465 /* UIViewController+KNSemiModal.m */,
+			);
+			name = ModalView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		929D2EAE19920E3A004405B5 = {
+			isa = PBXGroup;
+			children = (
+				929D2EC019920E3A004405B5 /* pocketPaint */,
+				929D2EDF19920E3A004405B5 /* pocketPaintTests */,
+				929D2EB919920E3A004405B5 /* Frameworks */,
+				929D2EB819920E3A004405B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929D2EB819920E3A004405B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929D2EB719920E3A004405B5 /* pocketPaint.app */,
+				929D2ED819920E3A004405B5 /* pocketPaintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929D2EB919920E3A004405B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				929D2EBA19920E3A004405B5 /* Foundation.framework */,
+				929D2EBC19920E3A004405B5 /* CoreGraphics.framework */,
+				929D2EBE19920E3A004405B5 /* UIKit.framework */,
+				929D2ED919920E3A004405B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		929D2EC019920E3A004405B5 /* pocketPaint */ = {
+			isa = PBXGroup;
+			children = (
+				922647D819B751AC003A5F30 /* ViewController */,
+				922647D619B75174003A5F30 /* Helper */,
+				92B2CFB719C090E200502BBE /* Tools */,
+				929D2EC919920E3A004405B5 /* AppDelegate.h */,
+				929D2ECA19920E3A004405B5 /* AppDelegate.m */,
+				929D2ECC19920E3A004405B5 /* Main.storyboard */,
+				929D2ED219920E3A004405B5 /* Images.xcassets */,
+				929D2EC119920E3A004405B5 /* Supporting Files */,
+			);
+			path = pocketPaint;
+			sourceTree = "<group>";
+		};
+		929D2EC119920E3A004405B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92302FC119E2C9A6005FD465 /* Licenses */,
+				92302FA919E2B597005FD465 /* license-test.sh */,
+				929D2EC219920E3A004405B5 /* pocketPaint-Info.plist */,
+				929D2EC319920E3A004405B5 /* InfoPlist.strings */,
+				929D2EC619920E3A004405B5 /* main.m */,
+				929D2EC819920E3A004405B5 /* pocketPaint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		929D2EDF19920E3A004405B5 /* pocketPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				929D2EE519920E3B004405B5 /* pocketPaintTests.m */,
+				929D2EE019920E3A004405B5 /* Supporting Files */,
+			);
+			path = pocketPaintTests;
+			sourceTree = "<group>";
+		};
+		929D2EE019920E3A004405B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				929D2EE119920E3A004405B5 /* pocketPaintTests-Info.plist */,
+				929D2EE219920E3A004405B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		929D2EEF1992610C004405B5 /* Cropper */ = {
+			isa = PBXGroup;
+			children = (
+				929D2EFE1992A680004405B5 /* YKImageCropperOverlayView.h */,
+				929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */,
+				929D2F001992A680004405B5 /* YKImageCropperView.h */,
+				929D2F011992A680004405B5 /* YKImageCropperView.m */,
+			);
+			name = Cropper;
+			path = CWPopup;
+			sourceTree = "<group>";
+		};
+		929D2F3F1994F3CC004405B5 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				92302F8C19E2B2C6005FD465 /* LCTableViewPickerControl.h */,
+				92302F8D19E2B2C6005FD465 /* LCTableViewPickerControl.m */,
+			);
+			name = picker;
+			sourceTree = "<group>";
+		};
+		92B2CFB719C090E200502BBE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				92302FBE19E2C97B005FD465 /* FillTool.h */,
+				92302FBF19E2C97B005FD465 /* FillTool.m */,
+				9267E96819C0BBE000FAA3F5 /* ResizeViewManager.h */,
+				9267E96919C0BBE000FAA3F5 /* ResizeViewManager.m */,
+				9267E96519C0BA0B00FAA3F5 /* ImagePicker.h */,
+				9267E96619C0BA0B00FAA3F5 /* ImagePicker.m */,
+				92B2CFC119C0A15900502BBE /* PipetteTool.h */,
+				92B2CFC219C0A15900502BBE /* PipetteTool.m */,
+				9267E95C19C0B40E00FAA3F5 /* MirrorRotationZoomTool.h */,
+				9267E95D19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m */,
+				9267E95019C0A61000FAA3F5 /* DrawTool.h */,
+				9267E95119C0A61000FAA3F5 /* DrawTool.m */,
+				9267E95919C0B09300FAA3F5 /* LineTool.h */,
+				9267E95A19C0B09300FAA3F5 /* LineTool.m */,
+				9267E96B19C1976600FAA3F5 /* PointerTool.h */,
+				9267E96C19C1976600FAA3F5 /* PointerTool.m */,
+				92A51D7B19C9E9140099B3DF /* HandTool.h */,
+				92A51D7C19C9E9140099B3DF /* HandTool.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929D2EB619920E3A004405B5 /* pocketPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929D2EE919920E3B004405B5 /* Build configuration list for PBXNativeTarget "pocketPaint" */;
+			buildPhases = (
+				929D2EB319920E3A004405B5 /* Sources */,
+				929D2EB419920E3A004405B5 /* Frameworks */,
+				929D2EB519920E3A004405B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92302FD119E2CD0C005FD465 /* PBXTargetDependency */,
+			);
+			name = pocketPaint;
+			productName = pocketPaint;
+			productReference = 929D2EB719920E3A004405B5 /* pocketPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929D2ED719920E3A004405B5 /* pocketPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929D2EEC19920E3B004405B5 /* Build configuration list for PBXNativeTarget "pocketPaintTests" */;
+			buildPhases = (
+				929D2ED419920E3A004405B5 /* Sources */,
+				929D2ED519920E3A004405B5 /* Frameworks */,
+				929D2ED619920E3A004405B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929D2EDE19920E3A004405B5 /* PBXTargetDependency */,
+			);
+			name = pocketPaintTests;
+			productName = pocketPaintTests;
+			productReference = 929D2ED819920E3A004405B5 /* pocketPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929D2EAF19920E3A004405B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marc Slavec";
+				TargetAttributes = {
+					92302FA419E2B576005FD465 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					929D2EB619920E3A004405B5 = {
+						DevelopmentTeam = 4V6T7BCGGR;
+					};
+					929D2ED719920E3A004405B5 = {
+						TestTargetID = 929D2EB619920E3A004405B5;
+					};
+				};
+			};
+			buildConfigurationList = 929D2EB219920E3A004405B5 /* Build configuration list for PBXProject "pocketPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 929D2EAE19920E3A004405B5;
+			productRefGroup = 929D2EB819920E3A004405B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929D2EB619920E3A004405B5 /* pocketPaint */,
+				929D2ED719920E3A004405B5 /* pocketPaintTests */,
+				92302FA419E2B576005FD465 /* LicenseTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929D2EB519920E3A004405B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92302F9E19E2B3B5005FD465 /* nko_brightness_guide.png in Resources */,
+				92302FCA19E2C9A6005FD465 /* LCTableViewPickerControl.license in Resources */,
+				92302FAA19E2B597005FD465 /* license-test.sh in Resources */,
+				929D2ED319920E3A004405B5 /* Images.xcassets in Resources */,
+				92302FCC19E2C9A6005FD465 /* SPUserResizableView.license in Resources */,
+				92302F9F19E2B3B5005FD465 /* nko_brightness_guide@2x.png in Resources */,
+				92302FCE19E2C9A6005FD465 /* UIViewController+KNSemiModal in Resources */,
+				92302FA019E2B3B5005FD465 /* nko_colormap.png in Resources */,
+				929D2EC519920E3A004405B5 /* InfoPlist.strings in Resources */,
+				929D2ECE19920E3A004405B5 /* Main.storyboard in Resources */,
+				92302FCF19E2C9A6005FD465 /* YKImageCropperView.license in Resources */,
+				92302FCD19E2C9A6005FD465 /* UIImage+FloodFill.license in Resources */,
+				92302FC919E2C9A6005FD465 /* ImageHelper.license in Resources */,
+				92302FCB19E2C9A6005FD465 /* NKOColorPickerView.license in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929D2ED619920E3A004405B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929D2EE419920E3A004405B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92302FAE19E2B625005FD465 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./license-test.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929D2EB319920E3A004405B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929D2ED119920E3A004405B5 /* PaintViewController.m in Sources */,
+				92B2CFC319C0A15900502BBE /* PipetteTool.m in Sources */,
+				929D2F031992A680004405B5 /* YKImageCropperView.m in Sources */,
+				9267E95B19C0B09300FAA3F5 /* LineTool.m in Sources */,
+				92302FA319E2B3D0005FD465 /* NKOColorPickerView.m in Sources */,
+				9267E95219C0A61000FAA3F5 /* DrawTool.m in Sources */,
+				92302F8219E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m in Sources */,
+				929D2EF5199261D9004405B5 /* ColorPickerViewController.m in Sources */,
+				92302F8B19E2B2B8005FD465 /* UIImage+FloodFill.m in Sources */,
+				92B2CFC019C0A08D00502BBE /* RGBAHelper.m in Sources */,
+				929D2ECB19920E3A004405B5 /* AppDelegate.m in Sources */,
+				9267E96D19C1976600FAA3F5 /* PointerTool.m in Sources */,
+				9267E96A19C0BBE000FAA3F5 /* ResizeViewManager.m in Sources */,
+				929D2EF8199261F0004405B5 /* BrushPickerViewController.m in Sources */,
+				92A51D7D19C9E9140099B3DF /* HandTool.m in Sources */,
+				92302F8519E2B2A3005FD465 /* UIViewController+KNSemiModal.m in Sources */,
+				929D2EC719920E3A004405B5 /* main.m in Sources */,
+				92302F8E19E2B2C6005FD465 /* LCTableViewPickerControl.m in Sources */,
+				924A8C5E19DFED0400751BAE /* SPUserResizableView.m in Sources */,
+				92BAC2B219C4614300BCCE43 /* UndoManager.m in Sources */,
+				9267E95E19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m in Sources */,
+				929D2F021992A680004405B5 /* YKImageCropperOverlayView.m in Sources */,
+				9224C1F019975C570071AFEC /* UIImage+Rotate.m in Sources */,
+				92302F8A19E2B2B8005FD465 /* LinkedListStack.m in Sources */,
+				92ED8BC9199B63C4002C9294 /* ImageHelper.m in Sources */,
+				92302FC019E2C97B005FD465 /* FillTool.m in Sources */,
+				9267E96719C0BA0B00FAA3F5 /* ImagePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929D2ED419920E3A004405B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929D2EE619920E3B004405B5 /* pocketPaintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92302FD119E2CD0C005FD465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92302FA419E2B576005FD465 /* LicenseTest */;
+			targetProxy = 92302FD019E2CD0C005FD465 /* PBXContainerItemProxy */;
+		};
+		929D2EDE19920E3A004405B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929D2EB619920E3A004405B5 /* pocketPaint */;
+			targetProxy = 929D2EDD19920E3A004405B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		929D2EC319920E3A004405B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929D2EC419920E3A004405B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		929D2ECC19920E3A004405B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929D2ECD19920E3A004405B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		929D2EE219920E3A004405B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929D2EE319920E3A004405B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92302FA619E2B576005FD465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92302FA719E2B576005FD465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		929D2EE719920E3B004405B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		929D2EE819920E3B004405B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929D2EEA19920E3B004405B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocketPaint/pocketPaint-Prefix.pch";
+				INFOPLIST_FILE = "pocketPaint/pocketPaint-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		929D2EEB19920E3B004405B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocketPaint/pocketPaint-Prefix.pch";
+				INFOPLIST_FILE = "pocketPaint/pocketPaint-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		929D2EED19920E3B004405B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pocketPaint.app/pocketPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocketPaint/pocketPaint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "pocketPaintTests/pocketPaintTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		929D2EEE19920E3B004405B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pocketPaint.app/pocketPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocketPaint/pocketPaint-Prefix.pch";
+				INFOPLIST_FILE = "pocketPaintTests/pocketPaintTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92302FA519E2B576005FD465 /* Build configuration list for PBXAggregateTarget "LicenseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92302FA619E2B576005FD465 /* Debug */,
+				92302FA719E2B576005FD465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929D2EB219920E3A004405B5 /* Build configuration list for PBXProject "pocketPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929D2EE719920E3B004405B5 /* Debug */,
+				929D2EE819920E3B004405B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929D2EE919920E3B004405B5 /* Build configuration list for PBXNativeTarget "pocketPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929D2EEA19920E3B004405B5 /* Debug */,
+				929D2EEB19920E3B004405B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929D2EEC19920E3B004405B5 /* Build configuration list for PBXNativeTarget "pocketPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929D2EED19920E3B004405B5 /* Debug */,
+				929D2EEE19920E3B004405B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 929D2EAF19920E3A004405B5 /* Project object */;
+}
