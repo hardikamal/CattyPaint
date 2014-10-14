@@ -49,7 +49,7 @@
   self.resizeViewer.delegate = self;
   self.resizeViewer.hidden = YES;
   [self.resizeViewer showEditingHandles];
-
+  [self.resizeViewer changeBorderWithColor:[UIColor blueColor]];
   
   self.rotateView = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotate:)];
   self.rotateView.delegate = self.canvas;
@@ -333,7 +333,7 @@
 -(void)hideShowUserAction
 {
   if (self.canvas.activeAction == stamp) {
-    [self.resizeViewer hideEditingHandles];
+//    [self.resizeViewer hideEditingHandles];
   } else{
     [self.resizeViewer showEditingHandles];
   }

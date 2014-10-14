@@ -331,7 +331,7 @@
     case stamp:
     {
       UIBarButtonItem* newStamp = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"stamp"] style:UIBarButtonItemStylePlain target:self action:@selector(stampAction)];
-      self.toolbarItems = [NSArray arrayWithObjects: action, self.handToolBarButtonItem ,newStamp, nil];
+      self.toolbarItems = [NSArray arrayWithObjects: action, self.handToolBarButtonItem ,newStamp,self.undo,self.redo, nil];
     }
       break;
     case rotate:{

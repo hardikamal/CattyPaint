@@ -14,7 +14,7 @@
 
 #define kSPUserResizableViewDefaultMinWidth 15.0
 #define kSPUserResizableViewDefaultMinHeight 15.0
-#define kSPUserResizableViewInteractiveBorderSize 10.0
+#define kSPUserResizableViewInteractiveBorderSize 20.0
 
 static SPUserResizableViewAnchorPoint SPUserResizableViewNoResizeAnchorPoint = { 0.0, 0.0, 0.0, 0.0 };
 static SPUserResizableViewAnchorPoint SPUserResizableViewUpperLeftAnchorPoint = { 1.0, 1.0, -1.0, 1.0 };
@@ -46,7 +46,7 @@ static SPUserResizableViewAnchorPoint SPUserResizableViewLowerMiddleAnchorPoint 
     CGContextSaveGState(context);
     
     // (1) Draw the bounding box.
-    CGContextSetLineWidth(context, 1.0);
+    CGContextSetLineWidth(context, 3.0);
     CGContextSetStrokeColorWithColor(context, self.borderColor.CGColor);
     CGContextAddRect(context, CGRectInset(self.bounds, kSPUserResizableViewInteractiveBorderSize/2, kSPUserResizableViewInteractiveBorderSize/2));
     CGContextStrokePath(context);
