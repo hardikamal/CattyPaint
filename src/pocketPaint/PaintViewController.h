@@ -51,6 +51,7 @@
 @property (nonatomic,strong) UIView *helper;
 @property (strong, nonatomic) UIScrollView *scrollView;
 @property (nonatomic,strong) UIBarButtonItem* handToolBarButtonItem;
+@property (nonatomic,strong) UIBarButtonItem* pointerToolBarButtonItem;
 @property (nonatomic,strong) UIBarButtonItem* redo;
 @property (nonatomic,strong) UIBarButtonItem* undo;
 

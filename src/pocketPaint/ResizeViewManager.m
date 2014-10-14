@@ -44,7 +44,7 @@
 {
   self.resizeViewer = [[SPUserResizableView alloc] initWithFrame:CGRectMake(50 , 50, 150 , 150)];
   UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50 , 50, 150 , 150)];
-  imageView.backgroundColor = [UIColor yellowColor];
+//  imageView.backgroundColor = [UIColor yellowColor];
   self.resizeViewer.contentView = imageView;
   self.resizeViewer.delegate = self;
   self.resizeViewer.hidden = YES;

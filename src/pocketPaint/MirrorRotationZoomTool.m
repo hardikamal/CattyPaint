@@ -81,10 +81,11 @@
 -(void)rotateRight
 {
   self.canvas.degrees += 90;
-  self.canvas.saveView.frame =CGRectMake(0, 0, (NSInteger)self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale, (NSInteger)self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale);
-  self.canvas.drawView.frame =CGRectMake(0, 0, (NSInteger)self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale, (NSInteger)self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale);
-  self.canvas.helper.frame = CGRectMake(self.canvas.helper.frame.origin.x, self.canvas.helper.frame.origin.y, (NSInteger)self.canvas.helper.frame.size.height, (NSInteger)self.canvas.helper.frame.size.width);
+  self.canvas.saveView.frame =CGRectMake(self.canvas.saveView.frame.origin.x,self.canvas.saveView.frame.origin.y, (self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
+  self.canvas.drawView.frame =CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, (self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
+  self.canvas.helper.frame =CGRectMake(self.canvas.helper.frame.origin.x, self.canvas.helper.frame.origin.y, self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale, self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale);
   UIImage *image =[self.canvas.saveView.image imageRotatedByDegrees:90];
+  [self.canvas.scrollView zoomToRect:self.canvas.saveView.frame animated:NO];
   //UNDO-Manager
   [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
   self.canvas.saveView.image = image;
@@ -93,10 +94,11 @@
 -(void)rotateLeft
 {
   self.canvas.degrees -= 90;
-  self.canvas.saveView.frame =CGRectMake(0, 0, (NSInteger)(self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (NSInteger)(self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
-  self.canvas.drawView.frame =CGRectMake(0, 0, (NSInteger)(self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (NSInteger)(self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
-  self.canvas.helper.frame =CGRectMake(self.canvas.helper.frame.origin.x, self.canvas.helper.frame.origin.y, (NSInteger)self.canvas.helper.frame.size.height, (NSInteger)self.canvas.helper.frame.size.width);
+  self.canvas.saveView.frame =CGRectMake(self.canvas.saveView.frame.origin.x,self.canvas.saveView.frame.origin.y, (self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
+  self.canvas.drawView.frame =CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, (self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale), (self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale));
+  self.canvas.helper.frame =CGRectMake(self.canvas.helper.frame.origin.x, self.canvas.helper.frame.origin.y, self.canvas.helper.frame.size.height/self.canvas.scrollView.zoomScale, self.canvas.helper.frame.size.width/self.canvas.scrollView.zoomScale);
   UIImage *image = [self.canvas.saveView.image imageRotatedByDegrees:-90];
+  [self.canvas.scrollView zoomToRect:self.canvas.saveView.frame animated:NO];
   //UNDO-Manager
   [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
   self.canvas.saveView.image = image;

@@ -31,7 +31,6 @@
 		92302F9F19E2B3B5005FD465 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92302F9C19E2B3B5005FD465 /* nko_brightness_guide@2x.png */; };
 		92302FA019E2B3B5005FD465 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 92302F9D19E2B3B5005FD465 /* nko_colormap.png */; };
 		92302FA319E2B3D0005FD465 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302FA219E2B3D0005FD465 /* NKOColorPickerView.m */; };
-		92302FAA19E2B597005FD465 /* license-test.sh in Resources */ = {isa = PBXBuildFile; fileRef = 92302FA919E2B597005FD465 /* license-test.sh */; };
 		92302FC019E2C97B005FD465 /* FillTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302FBF19E2C97B005FD465 /* FillTool.m */; };
 		92302FC919E2C9A6005FD465 /* ImageHelper.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC219E2C9A6005FD465 /* ImageHelper.license */; };
 		92302FCA19E2C9A6005FD465 /* LCTableViewPickerControl.license in Resources */ = {isa = PBXBuildFile; fileRef = 92302FC319E2C9A6005FD465 /* LCTableViewPickerControl.license */; };
@@ -73,7 +72,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92302FD019E2CD0C005FD465 /* PBXContainerItemProxy */ = {
+		92302FD219E2EF0D005FD465 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 929D2EAF19920E3A004405B5 /* Project object */;
 			proxyType = 1;
@@ -107,7 +106,6 @@
 		92302F9D19E2B3B5005FD465 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nko_colormap.png; path = pocketPaint/nko_colormap.png; sourceTree = SOURCE_ROOT; };
 		92302FA119E2B3D0005FD465 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOColorPickerView.h; path = pocketPaint/NKOColorPickerView.h; sourceTree = SOURCE_ROOT; };
 		92302FA219E2B3D0005FD465 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOColorPickerView.m; path = pocketPaint/NKOColorPickerView.m; sourceTree = SOURCE_ROOT; };
-		92302FA919E2B597005FD465 /* license-test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "license-test.sh"; path = "../license-test.sh"; sourceTree = "<group>"; };
 		92302FBE19E2C97B005FD465 /* FillTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillTool.h; sourceTree = "<group>"; };
 		92302FBF19E2C97B005FD465 /* FillTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillTool.m; sourceTree = "<group>"; };
 		92302FC219E2C9A6005FD465 /* ImageHelper.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageHelper.license; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				92302FC119E2C9A6005FD465 /* Licenses */,
-				92302FA919E2B597005FD465 /* license-test.sh */,
 				929D2EC219920E3A004405B5 /* pocketPaint-Info.plist */,
 				929D2EC319920E3A004405B5 /* InfoPlist.strings */,
 				929D2EC619920E3A004405B5 /* main.m */,
@@ -424,7 +421,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				92302FD119E2CD0C005FD465 /* PBXTargetDependency */,
+				92302FD319E2EF0D005FD465 /* PBXTargetDependency */,
 			);
 			name = pocketPaint;
 			productName = pocketPaint;
@@ -462,7 +459,7 @@
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					929D2EB619920E3A004405B5 = {
-						DevelopmentTeam = 4V6T7BCGGR;
+						DevelopmentTeam = 8FL5R8726S;
 					};
 					929D2ED719920E3A004405B5 = {
 						TestTargetID = 929D2EB619920E3A004405B5;
@@ -496,7 +493,6 @@
 			files = (
 				92302F9E19E2B3B5005FD465 /* nko_brightness_guide.png in Resources */,
 				92302FCA19E2C9A6005FD465 /* LCTableViewPickerControl.license in Resources */,
-				92302FAA19E2B597005FD465 /* license-test.sh in Resources */,
 				929D2ED319920E3A004405B5 /* Images.xcassets in Resources */,
 				92302FCC19E2C9A6005FD465 /* SPUserResizableView.license in Resources */,
 				92302F9F19E2B3B5005FD465 /* nko_brightness_guide@2x.png in Resources */,
@@ -583,10 +579,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92302FD119E2CD0C005FD465 /* PBXTargetDependency */ = {
+		92302FD319E2EF0D005FD465 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 92302FA419E2B576005FD465 /* LicenseTest */;
-			targetProxy = 92302FD019E2CD0C005FD465 /* PBXContainerItemProxy */;
+			targetProxy = 92302FD219E2EF0D005FD465 /* PBXContainerItemProxy */;
 		};
 		929D2EDE19920E3A004405B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -626,14 +622,28 @@
 		92302FA619E2B576005FD465 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_PKGINFO_FILE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
 			};
 			name = Debug;
 		};
 		92302FA719E2B576005FD465 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_PKGINFO_FILE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
 			};
 			name = Release;
 		};
@@ -670,7 +680,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

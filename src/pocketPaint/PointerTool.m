@@ -55,6 +55,7 @@
 
   [self.pointerView addSubview:self.colorView];
   
+  self.canvas.pointerToolBarButtonItem.tintColor = [UIColor lightOrangeColor];
   self.drawingEnabled = NO;
   
   
@@ -103,11 +104,13 @@
   if (self.drawingEnabled == YES) {
     self.drawingEnabled = NO;
     self.colorView.hidden = YES;
+    self.canvas.pointerToolBarButtonItem.tintColor = [UIColor lightOrangeColor];
+    
   } else{
     self.drawingEnabled = YES;
     self.colorView.hidden = NO;
-//    CGFloat thickness = sqrtf(self.canvas.thickness / 2.0f);
-//    self.colorView.frame = CGRectMake(self.pointerView.center.x-thickness/2.0f, self.pointerView.center.y-thickness/2.0f, thickness, thickness);
+    self.canvas.pointerToolBarButtonItem.tintColor = [UIColor greenColor];
+    [self updateColorView];
   }
   
 }

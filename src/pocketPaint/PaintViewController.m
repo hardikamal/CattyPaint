@@ -352,8 +352,8 @@
       break;
     case pointer:{
       UIBarButtonItem* brushPicker = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"thickness"] style:UIBarButtonItemStylePlain target:self action:@selector(brushAction)];
-      UIBarButtonItem* drawEnabler = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"pointer"] style:UIBarButtonItemStylePlain target:self.pointerTool action:@selector(drawingChangeAction)];
-      self.toolbarItems = [NSArray arrayWithObjects: action, self.handToolBarButtonItem ,brushPicker,self.colorBarButtonItem,drawEnabler,self.undo,self.redo, nil];
+     self.pointerToolBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"pointer"] style:UIBarButtonItemStylePlain target:self.pointerTool action:@selector(drawingChangeAction)];
+    self.toolbarItems = [NSArray arrayWithObjects: action, self.handToolBarButtonItem ,brushPicker,self.colorBarButtonItem,self.pointerToolBarButtonItem,self.undo,self.redo, nil];
     }
       break;
     default:
@@ -374,6 +374,7 @@
   self.fillRecognizer.enabled = NO;
   
   [self.handTool disableHandTool];
+  self.pointerToolBarButtonItem.tintColor = [UIColor lightOrangeColor];
   if (self.resizeViewManager.resizeViewer.hidden == NO) {
       [self.resizeViewManager hideResizeView];
   }

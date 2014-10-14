@@ -42,7 +42,7 @@
       fingerSwiped = NO;
       lastPoint = [recognizer locationOfTouch:0 inView:self.canvas.drawView];
     UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
-    [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
+    [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
     CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
     CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
     switch (self.canvas.ending) {
@@ -78,7 +78,7 @@
 //        return;
 //      }
       UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
-      [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
+      [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
       CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
       CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y);
       switch (self.canvas.ending) {
@@ -115,7 +115,7 @@
       if (self.canvas.isEraser) {
         if(!fingerSwiped) {
           UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
-          [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
+          [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
           switch (self.canvas.ending) {
             case Round:
               CGContextSetLineCap(UIGraphicsGetCurrentContext(),kCGLineCapRound);
@@ -137,7 +137,7 @@
           UIImage *image = [[UIImage alloc] init];
           
           [image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
-          [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height) blendMode:kCGBlendModeClear alpha:1];
+          [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height) blendMode:kCGBlendModeClear alpha:1];
           image = UIGraphicsGetImageFromCurrentImageContext();
           self.canvas.drawView.image = nil;
           CGContextFlush(UIGraphicsGetCurrentContext());
@@ -155,7 +155,7 @@
       else {
         if(!fingerSwiped) {
           UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
-          [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
+          [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
           switch (self.canvas.ending) {
             case Round:
               CGContextSetLineCap(UIGraphicsGetCurrentContext(),kCGLineCapRound);
@@ -177,8 +177,8 @@
           UIGraphicsEndImageContext();
         }
         UIGraphicsBeginImageContext(self.canvas.saveView.frame.size);
-        [self.canvas.saveView.image drawInRect:CGRectMake(0, 0, self.canvas.saveView.frame.size.width, self.canvas.saveView.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
-        [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height) blendMode:kCGBlendModeNormal alpha:self.canvas.opacity];
+        [self.canvas.saveView.image drawInRect:CGRectMake(self.canvas.saveView.frame.origin.x,self.canvas.saveView.frame.origin.y, self.canvas.saveView.frame.size.width, self.canvas.saveView.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+        [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height) blendMode:kCGBlendModeNormal alpha:self.canvas.opacity];
         //UNDO-Manager
         [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
         

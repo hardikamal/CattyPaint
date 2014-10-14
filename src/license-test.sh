@@ -7,7 +7,6 @@ EXCLUDED_DIRS=(  )
 EXCLUDED_FILES=( "YKImageCropperOverlayView.[mh]" "YKImageCropperView.[mh]" "UIViewController+KNSemiModal.[mh]" "LCTableViewPickerControl.[mh]" "ImageHelper.[mh]" "LinkedListStack.[mh]" "NKOColorPickerView.[mh]" "SPUserResizableView.[mh]" "UIImage+FloodFill.[mh]" )
 
 
-
 EXCLUDED_DIRS_STR=""
 for ((i=0;i<${#EXCLUDED_DIRS[@]};++i)); do
     if [ "$i" -gt 0 ]
