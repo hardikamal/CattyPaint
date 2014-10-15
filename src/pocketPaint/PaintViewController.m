@@ -482,7 +482,7 @@
 -(void)cropInitAction
 {
   if (self.saveView.image) {
-    self.cropperView = [[YKImageCropperView alloc] initWithImage:self.saveView.image andFrame:self.saveView.frame];
+    self.cropperView = [[YKImageCropperView alloc] initWithImage:self.saveView.image andFrame:self.view.frame];
     [self.view addSubview:self.cropperView];
     self.drawView.hidden = YES;
     self.saveView.hidden = YES;
