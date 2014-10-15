@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		9224C1F019975C570071AFEC /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9224C1EF19975C570071AFEC /* UIImage+Rotate.m */; };
+		922E53C419EE6FDD00CC7999 /* YKImageCropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E53C119EE6FDD00CC7999 /* YKImageCropperOverlayView.m */; };
+		922E53C519EE6FDD00CC7999 /* YKImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E53C319EE6FDD00CC7999 /* YKImageCropperView.m */; };
 		92302F8219E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8119E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m */; };
 		92302F8519E2B2A3005FD465 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8419E2B2A3005FD465 /* UIViewController+KNSemiModal.m */; };
 		92302F8A19E2B2B8005FD465 /* LinkedListStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92302F8719E2B2B8005FD465 /* LinkedListStack.m */; };
@@ -62,8 +64,6 @@
 		929D2EE619920E3B004405B5 /* pocketPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EE519920E3B004405B5 /* pocketPaintTests.m */; };
 		929D2EF5199261D9004405B5 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EF4199261D9004405B5 /* ColorPickerViewController.m */; };
 		929D2EF8199261F0004405B5 /* BrushPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EF7199261F0004405B5 /* BrushPickerViewController.m */; };
-		929D2F021992A680004405B5 /* YKImageCropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */; };
-		929D2F031992A680004405B5 /* YKImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929D2F011992A680004405B5 /* YKImageCropperView.m */; };
 		92A51D7D19C9E9140099B3DF /* HandTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A51D7C19C9E9140099B3DF /* HandTool.m */; };
 		92B2CFC019C0A08D00502BBE /* RGBAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CFBF19C0A08D00502BBE /* RGBAHelper.m */; };
 		92B2CFC319C0A15900502BBE /* PipetteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CFC219C0A15900502BBE /* PipetteTool.m */; };
@@ -91,6 +91,10 @@
 /* Begin PBXFileReference section */
 		9224C1EE19975C570071AFEC /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		9224C1EF19975C570071AFEC /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		922E53C019EE6FDD00CC7999 /* YKImageCropperOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKImageCropperOverlayView.h; sourceTree = "<group>"; };
+		922E53C119EE6FDD00CC7999 /* YKImageCropperOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKImageCropperOverlayView.m; sourceTree = "<group>"; };
+		922E53C219EE6FDD00CC7999 /* YKImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKImageCropperView.h; sourceTree = "<group>"; };
+		922E53C319EE6FDD00CC7999 /* YKImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKImageCropperView.m; sourceTree = "<group>"; };
 		92302F8019E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CatrobatUIColorExtensions.h"; sourceTree = "<group>"; };
 		92302F8119E2B266005FD465 /* UIColor+CatrobatUIColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CatrobatUIColorExtensions.m"; sourceTree = "<group>"; };
 		92302F8319E2B2A3005FD465 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "pocketPaint/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
@@ -152,10 +156,6 @@
 		929D2EF4199261D9004405B5 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
 		929D2EF6199261F0004405B5 /* BrushPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrushPickerViewController.h; sourceTree = "<group>"; };
 		929D2EF7199261F0004405B5 /* BrushPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrushPickerViewController.m; sourceTree = "<group>"; };
-		929D2EFE1992A680004405B5 /* YKImageCropperOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKImageCropperOverlayView.h; path = ../YKImageCropperOverlayView.h; sourceTree = "<group>"; };
-		929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKImageCropperOverlayView.m; path = ../YKImageCropperOverlayView.m; sourceTree = "<group>"; };
-		929D2F001992A680004405B5 /* YKImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKImageCropperView.h; path = ../YKImageCropperView.h; sourceTree = "<group>"; };
-		929D2F011992A680004405B5 /* YKImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKImageCropperView.m; path = ../YKImageCropperView.m; sourceTree = "<group>"; };
 		92A51D7B19C9E9140099B3DF /* HandTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTool.h; sourceTree = "<group>"; };
 		92A51D7C19C9E9140099B3DF /* HandTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTool.m; sourceTree = "<group>"; };
 		92B2CFBE19C0A08D00502BBE /* RGBAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBAHelper.h; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 				9216DFEB19DDABE90013C1E2 /* ColorPicker */,
 				928756DE19DE8C3C00F520E8 /* ModalView */,
 				922647D719B7518D003A5F30 /* Fill */,
-				929D2EEF1992610C004405B5 /* Cropper */,
 				929D2F3F1994F3CC004405B5 /* picker */,
+				922E53C619EE6FE300CC7999 /* Cropper */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -251,6 +251,17 @@
 				929D2EF7199261F0004405B5 /* BrushPickerViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		922E53C619EE6FE300CC7999 /* Cropper */ = {
+			isa = PBXGroup;
+			children = (
+				922E53C019EE6FDD00CC7999 /* YKImageCropperOverlayView.h */,
+				922E53C119EE6FDD00CC7999 /* YKImageCropperOverlayView.m */,
+				922E53C219EE6FDD00CC7999 /* YKImageCropperView.h */,
+				922E53C319EE6FDD00CC7999 /* YKImageCropperView.m */,
+			);
+			name = Cropper;
 			sourceTree = "<group>";
 		};
 		92302FC119E2C9A6005FD465 /* Licenses */ = {
@@ -359,18 +370,6 @@
 				929D2EE219920E3A004405B5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		929D2EEF1992610C004405B5 /* Cropper */ = {
-			isa = PBXGroup;
-			children = (
-				929D2EFE1992A680004405B5 /* YKImageCropperOverlayView.h */,
-				929D2EFF1992A680004405B5 /* YKImageCropperOverlayView.m */,
-				929D2F001992A680004405B5 /* YKImageCropperView.h */,
-				929D2F011992A680004405B5 /* YKImageCropperView.m */,
-			);
-			name = Cropper;
-			path = CWPopup;
 			sourceTree = "<group>";
 		};
 		929D2F3F1994F3CC004405B5 /* picker */ = {
@@ -540,7 +539,6 @@
 			files = (
 				929D2ED119920E3A004405B5 /* PaintViewController.m in Sources */,
 				92B2CFC319C0A15900502BBE /* PipetteTool.m in Sources */,
-				929D2F031992A680004405B5 /* YKImageCropperView.m in Sources */,
 				9267E95B19C0B09300FAA3F5 /* LineTool.m in Sources */,
 				92302FA319E2B3D0005FD465 /* NKOColorPickerView.m in Sources */,
 				9267E95219C0A61000FAA3F5 /* DrawTool.m in Sources */,
@@ -548,6 +546,7 @@
 				929D2EF5199261D9004405B5 /* ColorPickerViewController.m in Sources */,
 				92302F8B19E2B2B8005FD465 /* UIImage+FloodFill.m in Sources */,
 				92B2CFC019C0A08D00502BBE /* RGBAHelper.m in Sources */,
+				922E53C419EE6FDD00CC7999 /* YKImageCropperOverlayView.m in Sources */,
 				929D2ECB19920E3A004405B5 /* AppDelegate.m in Sources */,
 				9267E96D19C1976600FAA3F5 /* PointerTool.m in Sources */,
 				9267E96A19C0BBE000FAA3F5 /* ResizeViewManager.m in Sources */,
@@ -559,7 +558,7 @@
 				924A8C5E19DFED0400751BAE /* SPUserResizableView.m in Sources */,
 				92BAC2B219C4614300BCCE43 /* UndoManager.m in Sources */,
 				9267E95E19C0B40E00FAA3F5 /* MirrorRotationZoomTool.m in Sources */,
-				929D2F021992A680004405B5 /* YKImageCropperOverlayView.m in Sources */,
+				922E53C519EE6FDD00CC7999 /* YKImageCropperView.m in Sources */,
 				9224C1F019975C570071AFEC /* UIImage+Rotate.m in Sources */,
 				92302F8A19E2B2B8005FD465 /* LinkedListStack.m in Sources */,
 				92ED8BC9199B63C4002C9294 /* ImageHelper.m in Sources */,

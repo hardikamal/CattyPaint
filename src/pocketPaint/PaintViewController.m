@@ -537,25 +537,29 @@
 
 -(void)cropAction
 {
-  //CROPACTION
-  UIImage* croppedImage = [self.cropperView editedImage];
-  self.drawView.image = nil;
-  CGSize boundsSize = croppedImage.size;
-  self.helper.frame = CGRectMake(0, 0, boundsSize.width*self.scrollView.zoomScale, boundsSize.height*self.scrollView.zoomScale);
-  self.saveView.frame =CGRectMake(0, 0, (NSInteger)boundsSize.width, (NSInteger)boundsSize.height);
-  self.drawView.frame =CGRectMake(0, 0, (NSInteger)boundsSize.width, (NSInteger)boundsSize.height);
-  self.saveView.image = croppedImage;
-  self.drawView.image = nil;
-  self.drawView.hidden = NO;
-  self.saveView.hidden = NO;
-  self.helper.hidden = NO;
-//  enabled = YES;
-  [self.cropperView removeFromSuperview];
-  self.cropperView = nil;
-  for (UIGestureRecognizer *recognizer in [self.scrollView gestureRecognizers]) {
-    recognizer.enabled = YES;
+  if ([self.cropperView superview] == self.view) {
+    UIImage* croppedImage = [self.cropperView editedImage];
+    self.drawView.image = nil;
+    CGSize boundsSize = croppedImage.size;
+    self.helper.frame = CGRectMake(0, 0, boundsSize.width*self.scrollView.zoomScale, boundsSize.height*self.scrollView.zoomScale);
+    self.saveView.frame =CGRectMake(0, 0, (NSInteger)boundsSize.width, (NSInteger)boundsSize.height);
+    self.drawView.frame =CGRectMake(0, 0, (NSInteger)boundsSize.width, (NSInteger)boundsSize.height);
+    self.saveView.image = croppedImage;
+    self.drawView.image = nil;
+    self.drawView.hidden = NO;
+    self.saveView.hidden = NO;
+    self.helper.hidden = NO;
+      //  enabled = YES;
+    [self.cropperView removeFromSuperview];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    for (UIGestureRecognizer *recognizer in [self.scrollView gestureRecognizers]) {
+      recognizer.enabled = YES;
+    }
+    [self.scrollView zoomToRect:CGRectMake(0, 0, 500, 500) animated:YES];
+  } else {
+    [self cropInitAction];
   }
-  [self.scrollView zoomToRect:CGRectMake(0, 0, 500, 500) animated:YES];
+  
 }
 
 -(void)stampAction
