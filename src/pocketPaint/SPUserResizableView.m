@@ -14,7 +14,7 @@
 
 #define kSPUserResizableViewDefaultMinWidth 15.0
 #define kSPUserResizableViewDefaultMinHeight 15.0
-#define kSPUserResizableViewInteractiveBorderSize 20.0
+#define kSPUserResizableViewInteractiveBorderSize 15.0
 
 static SPUserResizableViewAnchorPoint SPUserResizableViewNoResizeAnchorPoint = { 0.0, 0.0, 0.0, 0.0 };
 static SPUserResizableViewAnchorPoint SPUserResizableViewUpperLeftAnchorPoint = { 1.0, 1.0, -1.0, 1.0 };
@@ -63,8 +63,8 @@ static SPUserResizableViewAnchorPoint SPUserResizableViewLowerMiddleAnchorPoint 
     
     // (3) Create the gradient to paint the anchor points.
     CGFloat colors [] = { 
-        0.4, 0.8, 1.0, 1.0, 
-        0.0, 0.0, 1.0, 1.0
+        0.9, 0.57, 0.02, 1.0,
+        1.0, 1.0, 1.0, 1.0
     };
     CGColorSpaceRef baseSpace = CGColorSpaceCreateDeviceRGB();
     CGGradientRef gradient = CGGradientCreateWithColorComponents(baseSpace, colors, NULL, 2);

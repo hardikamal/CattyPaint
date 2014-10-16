@@ -45,9 +45,7 @@
     self.canvas.drawGesture.enabled = NO;
     self.canvas.pipetteRecognizer.enabled = NO;
     ResizeViewManager *resizeViewManager =(ResizeViewManager*)[self.canvas getResizeViewManager];
-//    resizeViewManager.moveView.enabled = NO;
     resizeViewManager.rotateView.enabled = NO;
-//    resizeViewManager.controlGesture.enabled = NO;
     resizeViewManager.resizeViewer.userInteractionEnabled = NO;
     PointerTool *pointerTool =(PointerTool*)[self.canvas getPointerTool];
     pointerTool.moveView.enabled = NO;

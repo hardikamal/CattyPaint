@@ -71,12 +71,8 @@
 
 -(void)updateColorView
 {
-  NSLog(@"%f",self.canvas.thickness);
-  NSLog(@"%f",self.canvas.thickness / sqrtf(2.0f));
-  NSLog(@"%@",NSStringFromCGRect(self.pointerView.frame));
   self.colorView.frame = CGRectMake(0, 0,self.canvas.thickness+2, self.canvas.thickness+2);
   self.colorView.center = CGPointMake(self.pointerView.center.x-self.pointerView.frame.origin.x, self.pointerView.center.y-self.pointerView.frame.origin.y) ;
-  NSLog(@"%@",NSStringFromCGRect(self.colorView.frame));
 //  self.colorView.backgroundColor = [UIColor colorWithRed:self.canvas.red green:self.canvas.green blue:self.canvas.blue alpha:self.canvas.opacity];
   UIGraphicsBeginImageContext(self.colorView.frame.size);
   switch (self.canvas.ending) {
@@ -121,7 +117,6 @@
   self.pointerView.hidden = YES;
   self.moveView.enabled = NO;
   self.colorView.hidden = YES;
-//  self.canvas.drawView.userInteractionEnabled = NO;
 }
 
 -(void)drawWithPointer:(UIPanGestureRecognizer *)recognizer
@@ -144,11 +139,6 @@
       //    if (enabled) {
       fingerSwiped = YES;
       CGPoint currentPoint = CGPointMake(self.pointerView.center.x, self.pointerView.center.y);
-      //      if (isShape) {
-      //        //TODO Shape should be editable
-      //        [self shapeMoved:currentPoint];
-      //        return;
-      //      }
       UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
       [self.canvas.drawView.image drawInRect:CGRectMake(0, 0, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
       CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
@@ -180,10 +170,6 @@
       
     }else if (recognizer.state == UIGestureRecognizerStateEnded){
       //    if (enabled) {
-      //      if (self.canvas.isShape) {
-      //        [self.canvas shapeEnd];
-      //        return;
-      //      }
       if (self.canvas.isEraser) {
         if(!fingerSwiped) {
           UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
@@ -215,10 +201,8 @@
           CGContextFlush(UIGraphicsGetCurrentContext());
           UIGraphicsEndImageContext();
           self.canvas.saveView.image = image;
-          //          [self.canvas manageUndo:image];
           self.canvas.drawView.hidden = YES;
         }else {
-          //          [self.canvas manageUndo:self.canvas.drawView.image];
           self.canvas.saveView.image = self.canvas.drawView.image;
         }
         
@@ -253,9 +237,7 @@
         
         //UNDO-Manager
         [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
-        
         self.canvas.saveView.image = UIGraphicsGetImageFromCurrentImageContext();
-        //        [self.canvas manageUndo:self.canvas.saveView.image];
         self.canvas.drawView.image = nil;
         UIGraphicsEndImageContext();
       }

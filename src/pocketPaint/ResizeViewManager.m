@@ -49,7 +49,7 @@
   self.resizeViewer.delegate = self;
   self.resizeViewer.hidden = YES;
   [self.resizeViewer showEditingHandles];
-  [self.resizeViewer changeBorderWithColor:[UIColor blueColor]];
+  [self.resizeViewer changeBorderWithColor:[UIColor lightOrangeColor]];
   
   self.rotateView = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotate:)];
   self.rotateView.delegate = self.canvas;
@@ -99,28 +99,28 @@
 }
 
 - (void)handleResize:(UIPinchGestureRecognizer *)gestureRecognizer {
-  if([gestureRecognizer state] == UIGestureRecognizerStateBegan) {
-      // Reset the last scale, necessary if there are multiple objects with different scales
-    self.scale = [gestureRecognizer scale];
-  }
-  
-  if ([gestureRecognizer state] == UIGestureRecognizerStateBegan ||
-      [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
-    
-    CGFloat currentScale = [[self.resizeViewer.layer valueForKeyPath:@"transform.scale"] floatValue];
-    
-      // Constants to adjust the max/min values of zoom
-    const CGFloat kMaxScale = 2.0;
-    const CGFloat kMinScale = 1.0;
-    
-    CGFloat newScale = 1 -  (self.scale - [gestureRecognizer scale]);
-    newScale = MIN(newScale, kMaxScale / currentScale);
-    newScale = MAX(newScale, kMinScale / currentScale);
-    CGAffineTransform transform = CGAffineTransformScale([self.resizeViewer transform], newScale, newScale);
-    self.resizeViewer.transform = transform;
-    
-    self.scale = [gestureRecognizer scale];  // Store the previous scale factor for the next pinch gesture call
-  }
+//  if([gestureRecognizer state] == UIGestureRecognizerStateBegan) {
+//      // Reset the last scale, necessary if there are multiple objects with different scales
+//    self.scale = [gestureRecognizer scale];
+//  }
+//  
+//  if ([gestureRecognizer state] == UIGestureRecognizerStateBegan ||
+//      [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
+//    
+//    CGFloat currentScale = [[self.resizeViewer.layer valueForKeyPath:@"transform.scale"] floatValue];
+//    
+//      // Constants to adjust the max/min values of zoom
+//    const CGFloat kMaxScale = 2.0;
+//    const CGFloat kMinScale = 1.0;
+//    
+//    CGFloat newScale = 1 -  (self.scale - [gestureRecognizer scale]);
+//    newScale = MIN(newScale, kMaxScale / currentScale);
+//    newScale = MAX(newScale, kMinScale / currentScale);
+//    CGAffineTransform transform = CGAffineTransformScale([self.resizeViewer transform], newScale, newScale);
+//    self.resizeViewer.transform = transform;
+//    
+//    self.scale = [gestureRecognizer scale];  // Store the previous scale factor for the next pinch gesture call
+//  }
 }
 
 -(void)updateShape

@@ -108,7 +108,7 @@ CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin - NKOPickerViewGradientTopMargin);
     
     self.gradientView.frame = CGRectMake(NKOPickerViewDefaultMargin,
-                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin,
+                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin +15,
                                          CGRectGetWidth(self.frame) - (NKOPickerViewDefaultMargin*2),
                                          NKOPickerViewGradientViewHeight);
     

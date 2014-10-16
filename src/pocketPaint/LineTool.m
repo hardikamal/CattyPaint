@@ -85,7 +85,6 @@
     //UNDO-Manager
     [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
     self.canvas.saveView.image = UIGraphicsGetImageFromCurrentImageContext();
-//    [self manageUndo:self.saveView.image];
     self.canvas.drawView.image = nil;
     UIGraphicsEndImageContext();
   }

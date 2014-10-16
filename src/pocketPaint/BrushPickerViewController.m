@@ -23,6 +23,7 @@
 #import "BrushPickerViewController.h"
 #import "UIViewController+KNSemiModal.h"
 #import "PaintViewController.h"
+#import "UIImage+Rotate.h"
 
 @interface BrushPickerViewController ()
 @property (nonatomic,strong)UIImageView *brushView;
@@ -52,7 +53,7 @@
     self.brush = controller.thickness;
     self.brushEnding = controller.ending;
     self.color =[UIColor colorWithRed:controller.red green:controller.green blue:controller.blue alpha:controller.opacity];
-  }
+      }
   return self;
 }
 
@@ -61,6 +62,7 @@
 {
     [super viewDidLoad];
   [self setupToolBar];
+  self.view.backgroundColor = [UIColor cellBlueColor];
 
   
     // Do any additional setup after loading the view.
@@ -79,7 +81,8 @@
   self.toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
   [self.view addSubview:self.toolBar];
   self.doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
-  [self.toolBar setItems:@[self.doneButton]];
+  UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+  [self.toolBar setItems:@[flexibleItem, self.doneButton]];
   self.toolBar.frame = CGRectMake(0, 0, self.view.frame.size.width, self.toolBar.frame.size.height);
   self.toolBar.tintColor = [UIColor lightOrangeColor];
   
@@ -91,7 +94,8 @@
   NSArray *mySegments = [[NSArray alloc] initWithObjects: @"Round",
                          @"Square", nil];
   self.brushEndingControl = [[UISegmentedControl alloc] initWithItems:mySegments];
-  self.brushEndingControl.frame =CGRectMake(20, self.view.frame.size.height*0.9f, self.view.frame.size.width-40, 20);
+  CGFloat width = self.view.frame.size.width-140.0f;
+  self.brushEndingControl.frame =CGRectMake(self.view.center.x-width/2.0f, self.view.frame.size.height*0.9f, width, 20);
   self.brushEndingControl.tintColor = [UIColor lightOrangeColor];
   switch (self.brushEnding) {
     case Round:
@@ -113,7 +117,7 @@
 -(void)setupBrushSlider
 {
   self.brushSlider = [[UISlider alloc] init];
-  self.brushSlider.frame =CGRectMake(self.view.frame.size.width*0.2f, self.view.frame.size.height*0.7f, self.view.frame.size.width-200, 5);
+  self.brushSlider.frame =CGRectMake(self.view.frame.size.width*0.1f, self.view.frame.size.height*0.7f, self.view.frame.size.width-100, 5);
   [self.brushSlider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
   [self.brushSlider setBackgroundColor:[UIColor clearColor]];
   self.brushSlider.minimumValue = 1.0f;
@@ -124,8 +128,10 @@
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width*0.1f, self.view.frame.size.height*0.55f, 40, 10)];
   label.text = @"Thickness";
   [label sizeToFit];
+  label.textColor = [UIColor lightBlueColor];
   self.thicknessLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.brushSlider.frame.origin.x+self.brushSlider.frame.size.width +20, self.view.frame.size.height*0.7f-7, 40, 10)];
   self.thicknessLabel.text = [NSString stringWithFormat:@"%.0f",roundf(self.brush)];
+  self.thicknessLabel.textColor = [UIColor lightBlueColor];
   [self.thicknessLabel sizeToFit];
   
   [self.view addSubview:label];
@@ -136,7 +142,7 @@
 
 -(void)setupBrushPreview
 {
-  self.brushView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.center.x-50, 40, 125, 125)];
+  self.brushView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.center.x-60, 60, 125, 125)];
   UIGraphicsBeginImageContext(self.brushView.frame.size);
   switch (self.brushEnding) {
     case Round:
@@ -153,7 +159,9 @@
   CGContextMoveToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextStrokePath(UIGraphicsGetCurrentContext());
-  self.brushView.image = UIGraphicsGetImageFromCurrentImageContext();
+  UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+  self.brushView.image = [image imageRotatedByDegrees:45];
+  
   UIGraphicsEndImageContext();
   [self.view addSubview:self.brushView];
   [self.view setNeedsDisplay];
@@ -207,7 +215,8 @@
   CGContextMoveToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextStrokePath(UIGraphicsGetCurrentContext());
-  self.brushView.image = UIGraphicsGetImageFromCurrentImageContext();
+  UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+  self.brushView.image = [image imageRotatedByDegrees:45];
   UIGraphicsEndImageContext();
 //TODO Change ImageView
   NSLog(@"Segment at position %ld ",
@@ -239,7 +248,8 @@
   CGContextMoveToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),55, 55);
   CGContextStrokePath(UIGraphicsGetCurrentContext());
-  self.brushView.image = UIGraphicsGetImageFromCurrentImageContext();
+  UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+  self.brushView.image = [image imageRotatedByDegrees:45];
   UIGraphicsEndImageContext();
   
   

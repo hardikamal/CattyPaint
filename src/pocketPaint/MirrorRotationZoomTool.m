@@ -51,7 +51,6 @@
                                  orientation:UIImageOrientationUp];
     self.canvas.vertical=NO;
   }
-//  [self manageUndo:flippedImage];
   //UNDO-Manager
   [[self.canvas getUndoManager] setImage:self.canvas.saveView.image];
   self.canvas.saveView.image = flippedImage;

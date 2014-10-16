@@ -21,12 +21,15 @@
  */
 
 #import "AppDelegate.h"
+#import "UIColor+CatrobatUIColorExtensions.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+  [self initNavigationBar];
+
     return YES;
 }
 							
@@ -55,6 +58,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)initNavigationBar
+{
+  [UINavigationBar appearance].barTintColor = UIColor.navBarColor;
+  [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: UIColor.skyBlueColor}];
+  self.window.tintColor = UIColor.lightOrangeColor;
 }
 
 @end

@@ -72,11 +72,6 @@
 //    if (enabled) {
       fingerSwiped = YES;
       CGPoint currentPoint = [recognizer locationOfTouch:0 inView:self.canvas.drawView];
-//      if (isShape) {
-//        //TODO Shape should be editable
-//        [self shapeMoved:currentPoint];
-//        return;
-//      }
       UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
       [self.canvas.drawView.image drawInRect:CGRectMake(self.canvas.drawView.frame.origin.x,self.canvas.drawView.frame.origin.y, self.canvas.drawView.frame.size.width, self.canvas.drawView.frame.size.height)];
       CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
@@ -108,10 +103,6 @@
     
   }else if (recognizer.state == UIGestureRecognizerStateEnded){
 //    if (enabled) {
-//      if (self.canvas.isShape) {
-//        [self.canvas shapeEnd];
-//        return;
-//      }
       if (self.canvas.isEraser) {
         if(!fingerSwiped) {
           UIGraphicsBeginImageContext(self.canvas.drawView.frame.size);
@@ -144,10 +135,8 @@
           UIGraphicsEndImageContext();
           
           self.canvas.saveView.image = image;
-//          [self.canvas manageUndo:image];
           self.canvas.drawView.hidden = YES;
         }else {
-//          [self.canvas manageUndo:self.canvas.drawView.image];
           self.canvas.saveView.image = self.canvas.drawView.image;
         }
         

@@ -190,6 +190,7 @@
 {
   [self.navigationController setToolbarHidden:NO];
   self.navigationController.toolbar.barStyle = UIBarStyleBlack;
+  self.navigationController.toolbar.barTintColor = [UIColor navBarColor];
   self.navigationController.toolbar.tintColor = [UIColor lightOrangeColor];
   self.navigationController.toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
   [self updateToolbar];
@@ -200,6 +201,7 @@
 {
   self.navigationController.navigationBarHidden = NO;
   self.navigationController.navigationBar.tintColor = [UIColor lightOrangeColor];
+  self.navigationItem.title = @"Pocket Paint";
   UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
                                                                  style:UIBarButtonItemStylePlain
                                                                 target:self
@@ -589,7 +591,6 @@
 {
   BrushPickerViewController *bvc = [[BrushPickerViewController alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*0.5, self.view.frame.size.width, self.view.frame.size.height*0.5) andController:self];
   bvc.delegate = self;
-  bvc.view.backgroundColor = [UIColor whiteColor];
   
   [self presentSemiViewController:bvc];
 }

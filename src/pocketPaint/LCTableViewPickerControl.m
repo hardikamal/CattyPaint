@@ -69,15 +69,18 @@
     /*
      create dismissItem
      */
+  
   UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
-  rightButton.tintColor = [UIColor darkBlueColor];
+  rightButton.tintColor = [UIColor lightOrangeColor];
   UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:_title];
   item.rightBarButtonItem = rightButton;
   item.hidesBackButton = YES;
   item.titleView.tintColor = [UIColor yellowColor];
   [_navBar pushNavigationItem:item animated:NO];
     self.aTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, frame.size.width, frame.size.height - kNavBarHeight) style:UITableViewStylePlain];
+  self.aTableView.backgroundColor = [UIColor cellBlueColor];
+  self.aTableView.separatorColor = [UIColor lightBlueColor];
     [_aTableView setDelegate:self];
     [_aTableView setDataSource:self];
     [self addSubview:_navBar];
@@ -218,7 +221,8 @@
       cell.accessoryType = UITableViewCellAccessoryNone;
     }
   cell.imageView.backgroundColor = [UIColor darkBlueColor];
-  cell.textLabel.textColor = [UIColor darkBlueColor];
+  cell.textLabel.textColor = [UIColor lightBlueColor];
+  cell.backgroundColor = [UIColor cellBlueColor];
   
   switch (item) {
     case brush:{

@@ -12,7 +12,7 @@
 #define kPickerControlWidth 320
 #define kPickerControlAgeHeight 400
 #define kAnimationDuration 0.4
-#define kPickerTitleBarColor [UIColor lightOrangeColor]
+#define kPickerTitleBarColor [UIColor navBarColor]
 
 enum ActionType {
   brush,
