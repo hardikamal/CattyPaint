@@ -451,7 +451,6 @@ bool compareColor (unsigned int color1, unsigned int color2, int tolorance)
      diffBlue  > tolorance ||
      (diffAlpha > tolorance && diffAlpha < 255)   )
   {
-      //      NSLog(@"%i,%i,%i,%i",diffRed,diffGreen,diffBlue,diffAlpha);
     return false;
   }
   

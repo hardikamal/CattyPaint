@@ -124,7 +124,7 @@
   self.brushSlider.maximumValue = 75.0f;
   self.brushSlider.continuous = YES;
   self.brushSlider.value = self.brush;
-  self.brushSlider.tintColor = [UIColor darkBlueColor];
+  self.brushSlider.tintColor = [UIColor lightOrangeColor];
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width*0.1f, self.view.frame.size.height*0.55f, 40, 10)];
   label.text = @"Thickness";
   [label sizeToFit];
@@ -218,9 +218,7 @@
   UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
   self.brushView.image = [image imageRotatedByDegrees:45];
   UIGraphicsEndImageContext();
-//TODO Change ImageView
-  NSLog(@"Segment at position %ld ",
-        (long)selectedIndex);
+
 }
 
 -(void)sliderAction:(id)sender

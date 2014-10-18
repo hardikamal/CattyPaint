@@ -152,11 +152,11 @@
   self.redSlider.maximumValue = 255.0;
   self.redSlider.continuous = YES;
   self.redSlider.value = self.red*255.0f;
-  self.redSlider.tintColor = [UIColor darkBlueColor];
+  self.redSlider.tintColor = [UIColor lightOrangeColor];
   self.redLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.redSlider.frame.origin.x+self.redSlider.frame.size.width+20, self.view.frame.size.height*0.05f-7, 40, 10)];
   self.redLabel.text = [NSString stringWithFormat:@"%.0f",roundf(self.red*255.0f)];
   [self.redLabel sizeToFit];
-  self.redLabel.tintColor = [UIColor darkBlueColor];
+  self.redLabel.textColor = [UIColor lightBlueColor];
   
   
   [self.rgbaSliderView addSubview:label];
@@ -180,11 +180,11 @@
   self.greenSlider.maximumValue = 255.0;
   self.greenSlider.continuous = YES;
   self.greenSlider.value = self.green*255.0f;
-  self.greenSlider.tintColor = [UIColor darkBlueColor];
+  self.greenSlider.tintColor = [UIColor orangeColor];
   self.greenLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.greenSlider.frame.origin.x+self.greenSlider.frame.size.width+20, self.view.frame.size.height*0.15f-7, 40, 10)];
   self.greenLabel.text = [NSString stringWithFormat:@"%.0f",roundf(self.green*255.0f)];
   [self.greenLabel sizeToFit];
-  self.greenLabel.tintColor = [UIColor darkBlueColor];
+  self.greenLabel.textColor = [UIColor lightBlueColor];
   
   
   [self.rgbaSliderView addSubview:label];
@@ -206,11 +206,11 @@
   self.blueSlider.maximumValue = 255.0;
   self.blueSlider.continuous = YES;
   self.blueSlider.value = self.blue*255.0f;
-  self.blueSlider.tintColor = [UIColor darkBlueColor];
+  self.blueSlider.tintColor = [UIColor orangeColor];
   self.blueLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.blueSlider.frame.origin.x+self.blueSlider.frame.size.width+20, self.view.frame.size.height*0.25f-7, 40, 10)];
   self.blueLabel.text = [NSString stringWithFormat:@"%.0f",roundf(self.blue*255.0f)];
   [self.blueLabel sizeToFit];
-  self.blueLabel.tintColor = [UIColor darkBlueColor];
+  self.blueLabel.textColor = [UIColor lightBlueColor];
   
   
   [self.rgbaSliderView addSubview:label];
@@ -234,11 +234,11 @@
   self.opacitySlider.maximumValue = 255.0;
   self.opacitySlider.continuous = YES;
   self.opacitySlider.value = self.opacity*255.0f;
-  self.opacitySlider.tintColor = [UIColor darkBlueColor];
+  self.opacitySlider.tintColor = [UIColor orangeColor];
   self.opacityLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.opacitySlider.frame.origin.x+self.opacitySlider.frame.size.width+20, self.view.frame.size.height*0.35f-7, 40, 10)];
-  self.opacityLabel.text = [NSString stringWithFormat:@"%.0f",roundf(self.opacity*100.0f)];
+  self.opacityLabel.text = [NSString stringWithFormat:@"%.0f%%",roundf(self.opacity*100.0f)];
   [self.opacityLabel sizeToFit];
-  self.opacityLabel.tintColor = [UIColor darkBlueColor];
+  self.opacityLabel.textColor = [UIColor lightBlueColor];
   
   
   [self.rgbaSliderView addSubview:label];
@@ -313,7 +313,7 @@
 {
   UISlider *slider = (UISlider*)sender;
   float value = slider.value;
-  self.opacityLabel.text = [NSString stringWithFormat:@"%.0f",roundf(value)/255.0f*100.0f];
+  self.opacityLabel.text = [NSString stringWithFormat:@"%.0f%%",roundf(value)/255.0f*100.0f];
   [self.opacityLabel sizeToFit];
   self.opacity = value/255.0f;
   [self updatePreview];

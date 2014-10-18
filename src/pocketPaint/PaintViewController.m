@@ -454,7 +454,6 @@
     [self.undoManager undo];
     NSLog(@"undo");
   }else{
-     NSLog(@"no undo");
   }
   [self.undoManager updateUndoToolBarItems];
  
@@ -466,7 +465,6 @@
     [self.undoManager redo];
      NSLog(@"redo");
   }else{
-    NSLog(@"no redo");
   }
   [self.undoManager updateUndoToolBarItems];
 }
@@ -765,6 +763,11 @@
 #pragma mark - gestureRecognizer Delegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
   return YES;
+}
+
+#pragma mark - statusBar Delegate
+-(UIStatusBarStyle)preferredStatusBarStyle{
+  return UIStatusBarStyleLightContent;
 }
 
 

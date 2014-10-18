@@ -50,8 +50,6 @@
   CGFloat blueValue  = (rawData[byteIndex + 2] * 1.0) / 255.0;
   CGFloat alphaValue = (rawData[byteIndex + 3] * 1.0) / 255.0;
   
-  NSLog(@"READ:%f,%f,%f,%f",redValue,greenValue,blueValue,alphaValue);
-  
   UIColor *acolor = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:alphaValue];
   
   free(rawData);

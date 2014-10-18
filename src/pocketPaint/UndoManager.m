@@ -45,16 +45,11 @@
     
     // post notifications to update UI
   }else{
-    NSLog(@"else");
     [[self prepareWithInvocationTarget:self] setImage:self.canvas.saveView.image];
     self.canvas.helper.frame = CGRectMake(0,0, image.size.width, image.size.height);
     self.canvas.saveView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
     self.canvas.drawView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
     self.canvas.saveView.image = image;
-//    if (image) {
-//      [self.canvas.scrollView zoomToRect:self.canvas.helper.frame animated:NO];
-//    }
-    
   }
   [self updateUndoToolBarItems];
   

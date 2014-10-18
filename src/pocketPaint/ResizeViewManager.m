@@ -244,8 +244,6 @@
         //        [self updateTransform:self.resizeImageView transform:0];
         //        [self updateTransform:self.saveView transform:0];
         CGFloat scale = self.canvas.scrollView.zoomScale;
-        NSLog(@"%@",NSStringFromCGRect(self.resizeViewer.frame));
-        NSLog(@"%@",NSStringFromCGRect(self.canvas.saveView.frame));
         CGRect rect = self.resizeViewer.frame;
         rect.origin.x = (rect.origin.x + self.canvas.saveView.frame.origin.x) * scale;
         rect.origin.y = (rect.origin.y + self.canvas.saveView.frame.origin.y) * scale;
@@ -282,7 +280,6 @@
   }
   [self.resizeViewer hideEditingHandles];
   self.canvas.saveView.backgroundColor = [UIColor clearColor];
-  NSLog(@"%f,%f",[UIScreen mainScreen].scale,self.canvas.scrollView.zoomScale);
   CGFloat scale = self.canvas.scrollView.zoomScale;
   [self.canvas.scrollView setZoomScale:1.0f];
   UIGraphicsBeginImageContextWithOptions(self.canvas.helper.frame.size, NO, self.canvas.scrollView.zoomScale);

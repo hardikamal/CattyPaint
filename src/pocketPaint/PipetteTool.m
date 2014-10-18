@@ -46,9 +46,7 @@
   UIColor *color = [RGBAHelper getRGBAsFromImage:self.canvas.saveView.image atX:(int)point.x andY:(int)point.y];
   CGFloat r,g,b,a;
   [color getRed:&r green:&g blue:&b alpha:&a];
-  if (r == 0.0f && g == 0.0f && b == 0.0f && a == 0.0f) {
-    NSLog(@"is clearColor");
-  }else{
+  if (a != 0.0f) {
     self.canvas.red = r;
     self.canvas.green = g;
     self.canvas.blue = b;
